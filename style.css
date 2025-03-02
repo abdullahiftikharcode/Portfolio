@@ -196,7 +196,7 @@ footer {
 }
 
 .skill-bar {
-  background-color: #eee;
+  background-color:  (--bg-color);
   height: 8px;
   width: 90%;
 }
@@ -218,7 +218,7 @@ footer {
   border-radius: 6px;
   transform: translateY(-50%);
 }
-
+/*LIGHT MODE FOR CARDS*/
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -232,6 +232,22 @@ footer {
   background-size: cover;
   background-position: center;
 }
+
+/* Dark MODE FOR CARDS */
+.dark-theme .card {
+  background-color: #222 !important;  
+  color: #fff !important; 
+  border: 1px solid #444 !important; 
+}
+
+.dark-theme .card .card-subtitle {
+  color: #bbb !important;  
+}
+
+.dark-theme .card:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2) !important; /* White shadow for effect */
+}
+
 
 @media (min-width: 768px) {
   .contact-form {
@@ -296,4 +312,15 @@ footer {
   color: var(--button-text);
   border: 1px solid var(--button-text);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*BUTTON COLOR HANDLING FOR DARK MODE*/
+.dark-theme .btn-outline-dark {
+  color: #fff !important; 
+  border-color: #fff !important;  
+}
+
+.dark-theme .btn-outline-dark:hover {
+  background-color: #fff !important;  
+  color: #000 !important;  
 }
