@@ -1,0 +1,223 @@
+header .list-group-item {
+    border: none;
+    font-weight: bold;
+  }
+  ul.list-group a.list-group-item-action:hover{
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 4px !important; 
+    font-size: larger;
+  }
+  ul.list-group a.list-group-item-action.active {
+    display: inline-block;
+    background-color: transparent !important;
+    color: #000 !important;  
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 4px !important;
+    font-size: larger;
+  }
+  body {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: black white;
+  }
+  footer {
+    margin: 0 auto;  
+    padding: 1rem; 
+  }
+
+  #headingtitle {
+    color: black;
+    font-weight: bold;
+    font-size:100px;
+    text-decoration-thickness: 10px;
+    text-decoration: solid;
+  }
+  
+  .btn-custom {
+    border-radius: 50px !important;
+    border: 2px solid black !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 0.5rem 1.5rem!important;
+    transition: background-color 0.3s, color 0.3s !important;
+  }
+  
+  .btn-custom:hover {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .custom-round{
+    border-radius: 50%;
+  height:250px;
+  width:250px;
+  }
+  
+.gray{
+    color: gray;
+    font-size:x-large;
+}
+@keyframes count-1500 {
+    0% { content: "0"; }
+    10% { content: "150"; }
+    20% { content: "300"; }
+    30% { content: "450"; }
+    40% { content: "600"; }
+    50% { content: "750"; }
+    60% { content: "900"; }
+    70% { content: "1050"; }
+    80% { content: "1200"; }
+    90% { content: "1350"; }
+    100% { content: "1500"; }
+  }
+  
+  @keyframes count-50 {
+    0% { content: "0"; }
+    20% { content: "10"; }
+    40% { content: "20"; }
+    60% { content: "30"; }
+    80% { content: "40"; }
+    100% { content: "50"; }
+  }
+  
+  @keyframes count-40 {
+    0% { content: "0"; }
+    25% { content: "10"; }
+    50% { content: "20"; }
+    75% { content: "30"; }
+    100% { content: "40"; }
+  }
+  
+  @keyframes count-10 {
+    0% { content: "0"; }
+    10% { content: "1"; }
+    20% { content: "2"; }
+    30% { content: "3"; }
+    40% { content: "4"; }
+    50% { content: "5"; }
+    60% { content: "6"; }
+    70% { content: "7"; }
+    80% { content: "8"; }
+    90% { content: "9"; }
+    100% { content: "10"; }
+  }
+  
+  .counter-1500::after {
+    content: "0";
+    animation: count-1500 2s forwards ease-out;
+  }
+  
+  .counter-50::after {
+    content: "0";
+    animation: count-50 2s forwards ease-out;
+  }
+  
+  .counter-40::after {
+    content: "0";
+    animation: count-40 2s forwards ease-out;
+  }
+  
+  .counter-10::after {
+    content: "0";
+    animation: count-10 2s forwards ease-out;
+  }
+  
+  
+  .hidden-number {
+    font-size: 0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .page-content {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title {
+    animation: fadeInDown 0.8s ease-out;
+  }
+  .about {
+   display: flex;
+   flex-flow: row;
+   justify-content: space-around;
+   width: 90%;
+   margin-left: 5%;
+}
+  
+.helvetica_font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.skill-item {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .skill-name {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+ 
+  .skill-bar {
+    background-color: #eee; 
+    height: 8px;
+    width: 90%;
+  }
+  
+  
+  .skill-fill {
+    position: relative;
+    background-color: #000; 
+    height: 100%;
+  }
+  
+  
+  .skill-label {
+    position: absolute;
+    top: -1.5rem;    
+    right: 0;       
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transform: translateY(-50%);
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .repo-card{
+background-size: cover;
+background-position: center;
+
+  }
