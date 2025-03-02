@@ -1,22 +1,28 @@
-header .list-group-item {
-    border: none;
-    font-weight: bold;
-  }
-  ul.list-group a.list-group-item-action:hover{
-    text-decoration: underline !important;
-    text-decoration-thickness: 3px !important;
-    text-underline-offset: 4px !important; 
-    font-size: larger;
-  }
-  ul.list-group a.list-group-item-action.active {
-    display: inline-block;
-    background-color: transparent !important;
-    color: #000 !important;  
-    text-decoration: underline !important;
-    text-decoration-thickness: 3px !important;
-    text-underline-offset: 4px !important;
-    font-size: larger;
-  }
+.nav_header{
+    display: flex;
+}
+.nav_item{
+  font-weight: bold;
+  font-size:large;
+  color: #000 ; 
+  text-decoration: none;
+}
+.nav_item:hover{
+  text-decoration: underline ;
+  text-decoration-thickness: 3px ;
+  text-underline-offset: 4px; 
+  font-size: x-large;
+}
+.nav_item.active{
+  display: inline-block;
+  background-color: transparent ;
+  color: #000 ;  
+  text-decoration: underline;
+  text-decoration-thickness: 3px ;
+  text-underline-offset: 4px ;
+  font-size: x-large;
+}
+
   body {
     overflow-y: scroll;
     scrollbar-width: thin;
