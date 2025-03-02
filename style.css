@@ -13,7 +13,7 @@
   text-decoration: underline ;
   text-decoration-thickness: 3px ;
   text-underline-offset: 4px; 
-  
+
 }
 .nav_item.active{
   display: inline-block;
@@ -232,3 +232,21 @@ background-size: cover;
 background-position: center;
 
   }
+  
+  @media (min-width: 768px) {
+    .contact-form {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .contact-fields {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .message-field {
+      width: 48%;
+    }
+  }
+  
