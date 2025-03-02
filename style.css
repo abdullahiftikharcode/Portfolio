@@ -262,19 +262,19 @@ footer {
 
 /* Dark Theme Overrides */
 .dark-theme {
-  --bg-color: #121212;
-  --text-color: #f8f9fa;
+  --bg-color: #121212 ;
+  --text-color: #f8f9fa ;
   --header-bg: #1f1f1f;
-  --footer-bg: #1f1f1f;
+  --footer-bg: #1f1f1f ;
   --button-bg: #1f1f1f;
-  --button-text: #f8f9fa;
+  --button-text: #f8f9fa ;
 }
 
 /* Apply theme variables */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 /* Example styles for header, footer, and toggle button */
