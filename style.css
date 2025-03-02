@@ -3,15 +3,17 @@
 }
 .nav_item{
   font-weight: bold;
-  font-size:large;
-  color: #000 ; 
-  text-decoration: none;
+    font-size: large;
+    color: #000 !important;
+    text-decoration: none ;
+    position: relative;
+    transition: text-decoration-thickness 0.2s, font-size 0.2s;
 }
 .nav_item:hover{
   text-decoration: underline ;
   text-decoration-thickness: 3px ;
   text-underline-offset: 4px; 
-  font-size: x-large;
+  
 }
 .nav_item.active{
   display: inline-block;
