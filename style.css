@@ -38,8 +38,7 @@ footer {
   padding: 1rem;
 }
 
-.footer-flex {
-}
+
 
 #headingtitle {
   color: var(--text-color);
@@ -181,6 +180,15 @@ footer {
   justify-content: space-around;
   width: 90%;
   margin-left: 5%;
+}
+.about > * {
+  margin-right: 2rem;
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .helvetica_font {
@@ -392,4 +400,9 @@ footer {
   transform: scale(1.02) !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
   transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+
+.scrambler{
+
 }
