@@ -66,8 +66,8 @@ footer {
 
 .custom-round {
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
 }
 
 .gray {
@@ -259,7 +259,7 @@ footer {
 }
 
 .repo-card {
-  background-size: cover;
+  background-size: 100% 100%; 
   background-position: center;
 }
 
@@ -335,7 +335,7 @@ footer {
 }
 
 .theme-toggle {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   background-color: var(--button-bg);
