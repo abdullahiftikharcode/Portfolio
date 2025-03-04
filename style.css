@@ -58,6 +58,8 @@ footer {
   transition: background-color 0.3s, color 0.3s !important;
 }
 
+
+
 .btn-custom:hover {
   background-color: var(--button-text) !important;
   color: var(--button-bg) !important;
@@ -320,11 +322,13 @@ footer {
 
 /*BUTTON COLOR HANDLING FOR DARK MODE*/
 .dark-theme .btn-outline-dark {
-  color: #fff !important; 
-  border-color: #fff !important;  
+  color: #000000 !important; 
+  border-color: #030303 !important;  
 }
 
+
+
 .dark-theme .btn-outline-dark:hover {
-  background-color: #fff !important;  
-  color: #000 !important;  
+  background-color: #070707 !important;  
+  color: #fffbfb !important;  
 }
