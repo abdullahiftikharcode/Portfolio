@@ -485,12 +485,13 @@ body {
   font-weight: bold;
   border-radius: 20px; 
 }
+
 .menu-toggle {
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 1000;
-  background:var(--button-bg);
+  background:transparent;
   border:var(--button-text);
   font-size: 24px;
   color: white;
