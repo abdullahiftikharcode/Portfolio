@@ -46,6 +46,7 @@ footer {
   font-size: 100px;
   text-decoration-thickness: 10px;
   text-decoration: solid;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-custom {
@@ -66,8 +67,30 @@ footer {
 
 .custom-round {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-out forwards;
+  box-shadow: 0 8px 20px var(--text-color) !important;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-round {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .gray {
