@@ -356,28 +356,6 @@ footer {
 }
 
 
-.table-dark {
-  --bs-table-bg: #212529;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.table-dark.table-striped > tbody > tr:nth-of-type(odd) {
-  --bs-table-accent-bg: rgba(13, 110, 253, 0.1);
-}
-
-.table-dark thead th {
-  background-color:black;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  border: none;
-  padding: 15px;
-}
-
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -389,23 +367,26 @@ footer {
   }
 }
 
-
 .table-dark tbody tr {
-  animation: fadeInUp 0.8s ease forwards;
-  opacity: 0; 
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+.table-dark tbody tr.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .table-dark tbody tr:nth-child(1) {
-  animation-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .table-dark tbody tr:nth-child(2) {
-  animation-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 .table-dark tbody tr:nth-child(3) {
-  animation-delay: 0.6s;
+  transition-delay: 0.6s;
 }
-
 
 .table-dark tbody tr:hover {
   transform: scale(1.02) !important;
