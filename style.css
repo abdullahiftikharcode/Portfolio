@@ -198,37 +198,53 @@ footer {
 .skill-item {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .skill-name {
   display: inline-block;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-
 .skill-bar {
-  background-color:  (--bg-color);
+  background-color: var(--bg-color, #ddd);
   height: 8px;
   width: 90%;
-}
-
-.skill-fill {
+  border-radius: 4px;
   position: relative;
-  background-color: var(--text-color);
+  
+  overflow: visible;
+}
+.skill-fill {
+  background-color: var(--text-color, #007bff);
   height: 100%;
+  width: 0;
+  border-radius: 4px;
+  position: relative; 
+  
+  overflow: visible;
 }
 
+.animate .skill-fill {
+  animation: fillAnimation 2s forwards ease-out;
+}
+@keyframes fillAnimation {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
 .skill-label {
   position: absolute;
   top: -1.5rem;
   right: 0;
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  transform: translateY(-0.4rem);
+  opacity: 0;
+  transition: opacity 0.5s ease;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
-  transform: translateY(-50%);
+  background-color: var(--text-color, #007bff);
+  color: var(--bg-color, #ddd);
 }
-
+.skill-label.visible {
+  opacity: 1;
+}
 
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

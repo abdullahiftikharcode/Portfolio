@@ -27,9 +27,6 @@ document.querySelectorAll(".nav_item").forEach((element) => {
 });
 
 
-
-
-
 document.querySelectorAll(".scrambler").forEach((element) => {
     element.addEventListener("mouseenter", () => {
         if (element.dataset.scrambling) return; // Prevent multiple intervals
