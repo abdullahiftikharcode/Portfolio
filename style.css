@@ -332,3 +332,27 @@ footer {
   background-color: #070707 !important;  
   color: #fffbfb !important;  
 }
+
+
+.btn-neon{
+  border-color:var(--text-color) !important;  
+  color: var(--text-color) !important;  
+}
+
+.btn-neon:hover{
+  background-color:var(--text-color) !important;  
+  color: var(--button-bg) !important;  
+}
+.dark-theme .btn-neon {
+  color:var(--text-color)!important; 
+  border-color: var(--text-color) !important;  
+}
+
+
+
+.dark-theme .btn-neon:hover {
+  background-color:var(--text-color) !important;  
+  color: var(--button-bg) !important;  
+}
+
+
