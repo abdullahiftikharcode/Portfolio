@@ -508,7 +508,7 @@ body {
   font-size: 1.5rem; 
 }
 .dark-theme .menu-toggle{
-  background:var(--button-text);
+  background:transparent;
   border:var(--button-bg);
 }
 .content {
