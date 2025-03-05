@@ -1,163 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HIRE ME</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <head>
+    <!-- Meta tags and basic document information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HIRE ME</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="icon" type="image/png" href="icon.png">
-    
-    </head>
-    <body>
-      <main class="title"> 
-        <header>
-          <div class="container">
-            <div class="row">
+    <link rel="icon" type="image/png" href="icon.png">
+  </head>
+  <body>
+    <main class="title">
+      <header>
+        <div class="container">
+          <div class="row">
+            <!-- Sidebar toggle button -->
             <button class="col-md-1 menu-toggle btn btn-outline-light small-button">
               <i class="fas fa-bars"></i>
-          </button>
-            <h1 id = "headingtitle" class ="col-md-10">HIRE ME</h1>
-          </div>
-            </div>
-                <button id="themeToggle" style="border-radius: 50%; height:60px; width: 60px;" class="theme-toggle btn btn-outline-secondary" onclick="toggleTheme()">
-                  <!-- Light mode icon shown by default -->
-                  <svg id="iconLight" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-                    <path fill="#000" d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
-                  </svg>     
-                  <!-- Dark mode icon hidden by default -->
-                  <svg id="iconDark" class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                    <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
-                  </svg>
-                </button>
-            
-            
-            <div class="container ">
-              <div class="nav_header gap-4">
-                <a href="index.html" class="nav_item " data-text="HOME">HOME</a>
-                <a href="aboutme.html" class="nav_item " data-text="ABOUTME">ABOUTME</a>
-                <a href="works.html" class="nav_item " data-text="WORKS">WORKS</a>
-                 <a href="hireme.html" class="nav_item active" data-text="HIRE ME">HIRE ME</a>
-                </div>
-          </div>
-
-          <div class="sidebar" id="sidebar">
-            <div class="profile">
-              <img src="some.jpg" alt="User" class="profile-img">
-              <h5 class="name my-2">Abdullah Iftikhar</h5>
-              <p class="title">Junior Developer</p>
-            </div>
-        
-            <nav class="menu">
-              <a href="index.html" ><i class="fas fa-home"></i> Home</a>
-              <a href="works.html"><i class="fas fa-folder"></i> Projects</a>
-              <a href="aboutme.html"><i class="fas fa-cogs"></i> About Me</a>
-              <a href="hireme.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
-            </nav>
-        
-            <div class="footer-container mt-3">
-              <!-- Separator Line -->
-              <hr class="footer-divider">
-          
-              <div class="footer-content d-flex flex-column align-items-center">
-                  <button class="btn btn-neon btn-sm px-4 shadow-sm" style="border-radius: 50px;" onclick="location.href='AbdullahIftikharResume.pdf'">
-                      <i class="bi bi-download" style="font-size: 1.2rem;"></i> Download CV
-                  </button>  
-          
-                  <div class="footer mt-3 text-center text-light">
-                      <div class="d-flex justify-content-center">
-                          <div class="info-box p-2 shadow-lg  text-light">
-                              <p class="date fw-bold mb-1">
-                                  <i class="bi bi-calendar-event"></i> 3/5/2025
-                              </p>
-                              <p class="location fw-bold">
-                                  <i class="bi bi-geo-alt"></i> Lahore, Pakistan
-                              </p>
-                          </div>
-                      </div>
-                  </div> 
-              </div>
-          </div>                         
-            </div>
-          </header>  
-        </main>
-          <div class = "page-content">
-          <div class="container my-5" style="width: 70%;">
-            <p style="color:grey;">
-                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it.
-                 Please fill out the form below with your details and message, and we'll get back to you as soon as possible.
-            </p>
-            <h2>Contact Me</h2>
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                    <div class="invalid-feedback">Please enter your name.</div>
-                  </div>
-            
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                    <div class="invalid-feedback">Please enter a valid email.</div>
-                  </div>
-            
-                  <div class="mb-3">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                  </div>
-                </div>
-            
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    <div class="invalid-feedback">Please enter a message.</div>
-                  </div>
-                </div>
-              </div>
-            
-              <button type="submit" class="btn btn-custom">Submit</button>
-            </form>
-      
-            <div id="alertContainer" class="my-4"></div>
-            
-            
+            </button>
+            <h1 id="headingtitle" class="col-md-10">HIRE ME</h1>
           </div>
         </div>
 
-        <footer class="bg-dark text-white text-center py-4 mt-5">
-          <div class="container">
-            <div class="d-flex flex-column flex-md-row align-items-center" style="width: 100%;">
-              <div class="d-flex flex-md-row gap-3 text-center text-md-start">
-                <a href="https://instagram.com/abdulllahiftikhar" target="_blank" class="text-white">
-                  <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                </a>
-                <a href="https://linkedin.com/in/abdullahi-iftikhar" target="_blank" class="text-white">
-                  <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-                </a>
-                <div class="d-flex flex-column flex-md-row gap-3">
-                  <span class="d-flex align-items-center gap-2">
-                    <i class="bi bi-envelope-fill" style="font-size: 2.2rem;"></i>
-                    <span style="font-size:large;">ai868419@gmail.com</span>
-                  </span>
+        <!-- Theme toggle button (light/dark mode) -->
+        <button id="themeToggle" style="border-radius: 50%; height:60px; width: 60px;" 
+                class="theme-toggle btn btn-outline-secondary" onclick="toggleTheme()">
+          <!-- Light mode icon (visible by default) -->
+          <svg id="iconLight" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path fill="#000" d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+          </svg>
+          <!-- Dark mode icon (hidden by default) -->
+          <svg id="iconDark" class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+          </svg>
+        </button>
+
+        <!-- Navigation Bar -->
+        <div class="container">
+          <div class="nav_header gap-4">
+            <!-- Navigation links with active state on "HIRE ME" -->
+            <a href="index.html" class="nav_item" data-text="HOME">HOME</a>
+            <a href="aboutme.html" class="nav_item" data-text="ABOUTME">ABOUTME</a>
+            <a href="works.html" class="nav_item" data-text="WORKS">WORKS</a>
+            <a href="hireme.html" class="nav_item active" data-text="HIRE ME">HIRE ME</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div class="sidebar" id="sidebar">
+          <!-- Sidebar profile section -->
+          <div class="profile">
+            <img src="some.jpg" alt="User" class="profile-img">
+            <h5 class="name my-2">Abdullah Iftikhar</h5>
+            <p class="title">Junior Developer</p>
+          </div>
+          <!-- Sidebar navigation menu -->
+          <nav class="menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="works.html"><i class="fas fa-folder"></i> Projects</a>
+            <a href="aboutme.html"><i class="fas fa-cogs"></i> About Me</a>
+            <a href="hireme.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+          </nav>
+          <!-- Sidebar footer container -->
+          <div class="footer-container mt-3">
+            <!-- Separator line -->
+            <hr class="footer-divider">
+            <!-- Footer content with Download CV button and info box -->
+            <div class="footer-content d-flex flex-column align-items-center">
+              <!-- Download CV button -->
+              <button class="btn btn-neon btn-sm px-4 shadow-sm" style="border-radius: 50px;" 
+                      onclick="location.href='AbdullahIftikharResume.pdf'">
+                <i class="bi bi-download" style="font-size: 1.2rem;"></i> Download CV
+              </button>
+              <!-- Info box with date and location -->
+              <div class="footer mt-3 text-center text-light">
+                <div class="d-flex justify-content-center">
+                  <div class="info-box p-2 shadow-lg text-light">
+                    <p class="date fw-bold mb-1">
+                      <i class="bi bi-calendar-event"></i> 3/5/2025
+                    </p>
+                    <p class="location fw-bold">
+                      <i class="bi bi-geo-alt"></i> Lahore, Pakistan
+                    </p>
+                  </div>
                 </div>
               </div>
-              <button class="btn btn-outline-light btn-lg ms-auto scrambler" style="border-radius: 50px;" onclick="location.href='hireme.html'">
-                Let's Talk
-            </button>            
             </div>
           </div>
-        </footer>
-        <script src="sidebarscript.js"></script>
-        <script src="formvalidator.js"></script>      
-        <script src="scrambler.js"></script>     
-        <script src="darkmode.js"></script>     
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async defer></script>
-    </body>
+        </div>
+      </header>
+    </main>
+
+    <!-- Page Content Section -->
+    <div class="page-content">
+      <div class="container my-5" style="width: 70%;">
+        <!-- Introductory text -->
+        <p style="color:grey;">
+          Whether you have a question, a suggestion, or just want to say hello, this is the place to do it.
+          Please fill out the form below with your details and message, and we'll get back to you as soon as possible.
+        </p>
+        <h2>Contact Me</h2>
+        <!-- Contact Form -->
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="row">
+            <!-- Left column for Name, Email, Phone in dekstop on mobile all stacked-->
+            <div class="col-md-6">
+              <!-- Name Field -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <!-- Email Field -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <!-- Phone Field -->
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+            </div>
+            <!-- Right column for Message -->
+            <div class="col-md-6">
+              <!-- Message Field -->
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+        <!-- Container for any form alerts or messages -->
+        <div id="alertContainer" class="my-4"></div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center" style="width: 100%;">
+          <!-- Social Media Links -->
+          <div class="d-flex flex-md-row gap-3 text-center text-md-start">
+            <a href="https://instagram.com/abdulllahiftikhar" target="_blank" class="text-white">
+              <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+            </a>
+            <a href="https://linkedin.com/in/abdullahi-iftikhar" target="_blank" class="text-white">
+              <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+            </a>
+            <div class="d-flex flex-column flex-md-row gap-3">
+              <span class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope-fill" style="font-size: 2.2rem;"></i>
+                <span style="font-size:large;">ai868419@gmail.com</span>
+              </span>
+            </div>
+          </div>
+          <!-- "Let's Talk" Call-to-Action Button -->
+          <button class="btn btn-outline-light btn-lg ms-auto scrambler" style="border-radius: 50px;" onclick="location.href='hireme.html'">
+            Let's Talk
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="sidebarscript.js"></script>
+    <script src="formvalidator.js"></script>
+    <script src="scrambler.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async defer></script>
+  </body>
 </html>

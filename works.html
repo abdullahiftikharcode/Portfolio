@@ -1,173 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MY WORKS</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MY WORKS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="icon" type="image/png" href="icon.png">
-    </head>
-    <body>
-      <main class="title"> 
-        <header>
-          <div class="container">
-            <div class="row">
+    <link rel="icon" type="image/png" href="icon.png">
+  </head>
+  <body>
+    <main class="title">
+      <header>
+        <div class="container">
+          <div class="row">
+            <!-- Sidebar Toggle Button -->
             <button class="col-md-1 menu-toggle btn btn-outline-light small-button">
               <i class="fas fa-bars"></i>
-          </button>
-            <h1 id = "headingtitle" class ="col-md-10">MY WORKS</h1>
-          </div>
-            </div>
-            <button id="themeToggle" style="border-radius: 50%; height:60px; width: 60px;" class="theme-toggle btn btn-outline-secondary" onclick="toggleTheme()">
-              <!-- Light mode icon shown by default -->
-              <svg id="iconLight" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-                <path fill="#000" d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
-              </svg>     
-              <!-- Dark mode icon hidden by default -->
-              <svg id="iconDark" class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
-              </svg>
             </button>
-       
-        <div class="container ">
+            <h1 id="headingtitle" class="col-md-10">MY WORKS</h1>
+          </div>
+        </div>
+
+        <!-- Theme Toggle Button for Light/Dark Mode -->
+        <button id="themeToggle" style="border-radius: 50%; height:60px; width: 60px;" class="theme-toggle btn btn-outline-secondary" onclick="toggleTheme()">
+          <!-- Light mode icon (visible by default) -->
+          <svg id="iconLight" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path fill="#000" d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+          </svg>
+          <!-- Dark mode icon (hidden by default) -->
+          <svg id="iconDark" class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+          </svg>
+        </button>
+
+        <!-- Navigation Bar -->
+        <div class="container">
           <div class="nav_header gap-4">
-            <a href="index.html" class="nav_item " data-text="HOME">HOME</a>
-            <a href="aboutme.html" class="nav_item " data-text="ABOUTME">ABOUTME</a>
+            <!-- Navigation Links with active state on "WORKS" -->
+            <a href="index.html" class="nav_item" data-text="HOME">HOME</a>
+            <a href="aboutme.html" class="nav_item" data-text="ABOUTME">ABOUTME</a>
             <a href="works.html" class="nav_item active" data-text="WORKS">WORKS</a>
-             <a href="hireme.html" class="nav_item " data-text="HIRE ME">HIRE ME</a>
-            </div>
-      </div>
-      <div class="sidebar" id="sidebar">
-        <div class="profile">
-          <img src="some.jpg" alt="User" class="profile-img">
-          <h5 class="name my-2">Abdullah Iftikhar</h5>
-          <p class="title">Junior Developer</p>
+            <a href="hireme.html" class="nav_item" data-text="HIRE ME">HIRE ME</a>
+          </div>
         </div>
-    
-        <nav class="menu">
-          <a href="index.html" ><i class="fas fa-home"></i> Home</a>
-          <a href="works.html" class="active"><i class="fas fa-folder"></i> Projects</a>
-          <a href="aboutme.html" ><i class="fas fa-cogs"></i> About Me</a>
-          <a href="hireme.html" ><i class="fas fa-envelope"></i> Contact</a>
-        </nav>
-    
-        <div class="footer-container mt-3">
-          <!-- Separator Line -->
-          <hr class="footer-divider">
-      
-          <div class="footer-content d-flex flex-column align-items-center">
+
+        <!-- Sidebar Section -->
+        <div class="sidebar" id="sidebar">
+          <!-- Sidebar Profile Section -->
+          <div class="profile">
+            <img src="some.jpg" alt="User" class="profile-img">
+            <h5 class="name my-2">Abdullah Iftikhar</h5>
+            <p class="title">Junior Developer</p>
+          </div>
+
+          <!-- Sidebar Navigation Menu -->
+          <nav class="menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="works.html" class="active"><i class="fas fa-folder"></i> Projects</a>
+            <a href="aboutme.html"><i class="fas fa-cogs"></i> About Me</a>
+            <a href="hireme.html"><i class="fas fa-envelope"></i> Contact</a>
+          </nav>
+
+          <!-- Sidebar Footer Container -->
+          <div class="footer-container mt-3">
+            <!-- Separator Line -->
+            <hr class="footer-divider">
+            <!-- Footer Content: Download CV Button and Info Box -->
+            <div class="footer-content d-flex flex-column align-items-center">
+              <!-- Download CV Button -->
               <button class="btn btn-neon btn-sm px-4 shadow-sm" style="border-radius: 50px;" onclick="location.href='AbdullahIftikharResume.pdf'">
-                  <i class="bi bi-download" style="font-size: 1.2rem;"></i> Download CV
-              </button>  
-      
+                <i class="bi bi-download" style="font-size: 1.2rem;"></i> Download CV
+              </button>
+              <!-- Info Box with Date and Location -->
               <div class="footer mt-3 text-center text-light">
-                  <div class="d-flex justify-content-center">
-                      <div class="info-box p-2 shadow-lg  text-light">
-                          <p class="date fw-bold mb-1">
-                              <i class="bi bi-calendar-event"></i> 3/5/2025
-                          </p>
-                          <p class="location fw-bold">
-                              <i class="bi bi-geo-alt"></i> Lahore, Pakistan
-                          </p>
-                      </div>
-                  </div>
-              </div> 
-          </div>
-      </div>                         
-        </div>
-          </header> 
-        </main>
-
-          <div class = "page-content">
-          <div class="container my-5">
-            <div class="row">
-                <div class="col-md-2">
-                   <h6 class="helvetica_font" style="font-weight:bold">MY REPOSITORIES</h6>
-                </div>
-                <div class="col-md-10">
-                   <div class="row">
-                    <div class="col-md-6 my-2">
-                    <div class="card repo-card" style="background-image: url('https://opengraph.githubassets.com/fb102e714a8866c4ac621f97db3bf5add483eadbabe2a7a34932b26a8cd86847/abdullahiftikharcode/Titan-Factory');">
-                      <div class="card-shadow">  
-                      <div class="card-body">
-                          <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Titan-Factory" class="btn btn-outline-dark btn-sm">
-                            VIEW PROJECT
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                   </div>
-                   <div class="col-md-6 my-2">
-                    <div class="card repo-card " style="background-image: url('https://opengraph.githubassets.com/50d706637a7fca26164111bb859e1b3334fb52c91c9ac478c7e3f231d639f654/abdullahiftikharcode/Campus-Pulse');">
-                      <div class="card-shadow"> 
-                      <div class="card-body">
-                          <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Campus-Pulse" class="btn btn-outline-dark btn-sm ">
-                            VIEW PROJECT
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                   </div>
-                   <div class="col-md-6 my-2">
-                    <div class="card repo-card " style="background-image: url('https://opengraph.githubassets.com/c3270c6815beff38b508a4cea4429f91f964fd4c5c161f5f0b25ad7499b79d89/abdullahiftikharcode/Bookstore-Management-System');">
-                      <div class="card-shadow">   
-                      <div class="card-body">
-                          <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Bookstore-Management-System" class="btn btn-outline-dark btn-sm ">
-                            VIEW PROJECT
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                   </div>
-                   <div class="col-md-6 my-2">
-                    <div class="card repo-card " style="background-image: url('https://opengraph.githubassets.com/50e5f60f9ac2020b72a6ee173bb68ebf0c7b9ca4c539c611c28c02dbc23e85c2/abdullahiftikharcode/Chess');">
-                      <div class="card-shadow"> 
-                      <div class="card-body">
-                          <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Chess" class="btn btn-outline-dark btn-sm ">
-                            VIEW PROJECT
-                          </a>
-                        </div>
-                      </div> 
-                    </div>
-                   </div>
-                </div>
-            </div>
-          </div>
-          </div>
-
-        </div>
-
-          <footer class="bg-dark text-white text-center py-4 mt-5">
-            <div class="container">
-              <div class="d-flex flex-column flex-md-row align-items-center" style="width: 100%;">
-                <div class="d-flex flex-md-row gap-3 text-center text-md-start">
-                  <a href="https://instagram.com/abdulllahiftikhar" target="_blank" class="text-white">
-                    <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                  </a>
-                  <a href="https://linkedin.com/in/abdullahi-iftikhar" target="_blank" class="text-white">
-                    <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-                  </a>
-                  <div class="d-flex flex-column flex-md-row gap-3">
-                    <span class="d-flex align-items-center gap-2">
-                      <i class="bi bi-envelope-fill" style="font-size: 2.2rem;"></i>
-                      <span style="font-size:large;">ai868419@gmail.com</span>
-                    </span>
+                <div class="d-flex justify-content-center">
+                  <div class="info-box p-2 shadow-lg text-light">
+                    <p class="date fw-bold mb-1">
+                      <i class="bi bi-calendar-event"></i> 3/5/2025
+                    </p>
+                    <p class="location fw-bold">
+                      <i class="bi bi-geo-alt"></i> Lahore, Pakistan
+                    </p>
                   </div>
                 </div>
-                <button class="btn btn-outline-light btn-lg ms-auto scrambler" style="border-radius: 50px;" onclick="location.href='hireme.html'">
-                  Let's Talk
-              </button>              
               </div>
             </div>
-          </footer>  
-          <script src="sidebarscript.js"></script>
-          <script src="darkmode.js"></script>
-          <script src="scrambler.js"></script>            
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async defer></script>
-    </body>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- Page Content Section -->
+    <div class="page-content">
+      <div class="container my-5">
+        <div class="row">
+          <!-- Repositories Section Title -->
+          <div class="col-md-2">
+            <h6 class="helvetica_font" style="font-weight:bold">MY REPOSITORIES</h6>
+          </div>
+          <!-- Repository Cards Container -->
+          <div class="col-md-10">
+            <div class="row">
+              <!-- Repository Card 1 -->
+              <div class="col-md-6 my-2">
+                <div class="card repo-card" style="background-image: url('https://opengraph.githubassets.com/fb102e714a8866c4ac621f97db3bf5add483eadbabe2a7a34932b26a8cd86847/abdullahiftikharcode/Titan-Factory');">
+                  <div class="card-shadow">
+                    <div class="card-body">
+                      <!-- View Project Button -->
+                      <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Titan-Factory" class="btn btn-outline-dark btn-sm">
+                        VIEW PROJECT
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repository Card 2 -->
+              <div class="col-md-6 my-2">
+                <div class="card repo-card" style="background-image: url('https://opengraph.githubassets.com/50d706637a7fca26164111bb859e1b3334fb52c91c9ac478c7e3f231d639f654/abdullahiftikharcode/Campus-Pulse');">
+                  <div class="card-shadow">
+                    <div class="card-body">
+                      <!-- View Project Button -->
+                      <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Campus-Pulse" class="btn btn-outline-dark btn-sm">
+                        VIEW PROJECT
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repository Card 3 -->
+              <div class="col-md-6 my-2">
+                <div class="card repo-card" style="background-image: url('https://opengraph.githubassets.com/c3270c6815beff38b508a4cea4429f91f964fd4c5c161f5f0b25ad7499b79d89/abdullahiftikharcode/Bookstore-Management-System');">
+                  <div class="card-shadow">
+                    <div class="card-body">
+                      <!-- View Project Button -->
+                      <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Bookstore-Management-System" class="btn btn-outline-dark btn-sm">
+                        VIEW PROJECT
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repository Card 4 -->
+              <div class="col-md-6 my-2">
+                <div class="card repo-card" style="background-image: url('https://opengraph.githubassets.com/50e5f60f9ac2020b72a6ee173bb68ebf0c7b9ca4c539c611c28c02dbc23e85c2/abdullahiftikharcode/Chess');">
+                  <div class="card-shadow">
+                    <div class="card-body">
+                      <!-- View Project Button -->
+                      <a style="border-radius: 50px; margin-top:36%; margin-left:65%;" href="https://github.com/abdullahiftikharcode/Chess" class="btn btn-outline-dark btn-sm">
+                        VIEW PROJECT
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End Row for Repo Cards -->
+          </div> <!-- End Repository Cards Column -->
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div> <!-- End Page Content -->
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center" style="width: 100%;">
+          <!-- Social Media Links -->
+          <div class="d-flex flex-md-row gap-3 text-center text-md-start">
+            <a href="https://instagram.com/abdulllahiftikhar" target="_blank" class="text-white">
+              <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+            </a>
+            <a href="https://linkedin.com/in/abdullahi-iftikhar" target="_blank" class="text-white">
+              <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+            </a>
+            <div class="d-flex flex-column flex-md-row gap-3">
+              <span class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope-fill" style="font-size: 2.2rem;"></i>
+                <span style="font-size:large;">ai868419@gmail.com</span>
+              </span>
+            </div>
+          </div>
+          <!-- Call-to-Action Button in Footer -->
+          <button class="btn btn-outline-light btn-lg ms-auto scrambler" style="border-radius: 50px;" onclick="location.href='hireme.html'">
+            Let's Talk
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="sidebarscript.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="scrambler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async defer></script>
+  </body>
 </html>

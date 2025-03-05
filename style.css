@@ -536,7 +536,7 @@ body {
 
 .footer-divider {
   width: 100%;
-  border-top: 2px solid rgba(255, 255, 255, 0.2); /* Light separator line */
+  border-top: 2px solid rgba(255, 255, 255, 0.2); 
   margin-bottom: 15px;
 }
 
