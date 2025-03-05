@@ -1,4 +1,4 @@
-Portfolio Made using Javascript , HTML , CSS AND BOOTSTRAP with many animations and functionlties ranging from side bar , nav bar to animation for cards and table and many more. Below is the link for it 
+Portfolio Made using Javascript , HTML , CSS AND BOOTSTRAP with many animations and functionlties ranging from side bar , nav bar to animation for cards and table and many more with dark and light mode all bonus questions attempted with normal ones. Below is the link for it 
 Live Demo Link: https://abdullahiftikharcode.github.io/portfolio-2025/
 ![about_dark1](https://github.com/user-attachments/assets/90f99bdc-6be9-4289-bf36-5bf771471bab)
 ![about_dark2](https://github.com/user-attachments/assets/0cb4d875-3f7c-4f5e-a656-f2ccb39a4b41)
