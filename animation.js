@@ -1,3 +1,5 @@
+
+//to trigger animation for table when it gets in view 
 document.addEventListener("DOMContentLoaded", function () {
     const tableRows = document.querySelectorAll(".table-dark tbody tr");
   
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     tableRows.forEach((row) => observer.observe(row));
   });
-  
+  //to trigger animation for skills bar when it gets in view
   document.addEventListener("DOMContentLoaded", () => {
     const skillsSection = document.querySelector(".skills-section");
 

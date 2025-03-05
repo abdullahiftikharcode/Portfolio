@@ -1,3 +1,4 @@
+//for validating input from forms if correct show succesfull otherwise error
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
     const alertContainer = document.getElementById("alertContainer");

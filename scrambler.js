@@ -1,3 +1,4 @@
+//using both of these functions for scrambler effect on text 
 document.querySelectorAll(".nav_item").forEach((element) => {
     element.addEventListener("mouseenter", () => {
         if (element.dataset.scrambling) return; // Prevent multiple intervals
