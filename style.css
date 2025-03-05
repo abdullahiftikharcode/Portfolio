@@ -284,6 +284,7 @@ footer {
 .repo-card {
   background-size: 100% 100%; 
   background-position: center;
+  z-index: 1000;
 }
 
 /* Dark MODE FOR CARDS */
@@ -444,6 +445,7 @@ body {
   overflow-x: hidden;
 }
 .sidebar {
+  z-index: 1100;
   position: fixed;
   top: 0;
   left: -250px; 
@@ -490,7 +492,7 @@ body {
   position: absolute;
   top: 15px;
   left: 15px;
-  z-index: 1000;
+  z-index: 1200;
   background:transparent;
   border:var(--button-text);
   font-size: 24px;
